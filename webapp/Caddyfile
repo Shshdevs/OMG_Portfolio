@@ -1,0 +1,4 @@
+shshdev.onthewifi.com {
+    encode zstd gzip
+    reverse_proxy web:80
+}
