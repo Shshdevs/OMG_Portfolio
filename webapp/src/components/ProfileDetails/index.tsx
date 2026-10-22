@@ -1,9 +1,9 @@
-import styles from '../styles/index.module.scss'
-import { content } from '../data'
-import { ActivityIcon } from './ActivityIcon'
-import { Panel } from './Panel'
-import { SectionHeading } from './SectionHeading'
-import { TechnologyList } from './TechnologyList'
+import styles from './index.module.scss'
+import { content } from '../../data'
+import { ActivityIcon } from '../ActivityIcon'
+import { Panel } from '../Panel'
+import { SectionHeading } from '../SectionHeading'
+import { TechnologyList } from '../TechnologyList'
 
 export function ProfileDetails() {
   const { profile } = content
@@ -14,6 +14,7 @@ export function ProfileDetails() {
         <SectionHeading
           number={profile.sectionNumbers.about}
           title={profile.about.heading}
+          showArrowUpRight={false}
         />
         <Panel className={styles.aboutCard}>
           {profile.about.paragraphs.map((paragraph) => (
@@ -27,6 +28,7 @@ export function ProfileDetails() {
         <SectionHeading
           number={profile.sectionNumbers.technologies}
           title={profile.technologyHeading}
+          showArrowUpRight={false}
         />
         <Panel className={styles.technologyCard}>
           <TechnologyList technologies={content.technologies} />
@@ -37,6 +39,7 @@ export function ProfileDetails() {
         <SectionHeading
           number={profile.sectionNumbers.activities}
           title={profile.activitiesHeading}
+          showArrowUpRight={false}
         />
         <Panel className={styles.activityCard}>
           {content.activities.map((activity) => (

@@ -1,7 +1,8 @@
 import { MousePointer2, Sparkles } from 'lucide-react'
-import styles from '../styles/index.module.scss'
-import { content } from '../data'
-import { Panel } from './Panel'
+import styles from './index.module.scss'
+import { content } from '../../data'
+import { Panel } from '../Panel'
+import avatar from '../../assets/avatar.jpg'
 
 export function ProfileHero() {
   const { profile } = content
@@ -17,7 +18,7 @@ export function ProfileHero() {
         <span className={styles.heroNumber}>[ {profile.heroNumber} ]</span>
         <div className={styles.introCopy}>
           <h1 id="hero-title">
-            {profile.greeting} <span>{profile.name}</span>
+            {profile.greeting} <span className={styles.typedName}>{profile.name}</span>
           </h1>
           <p className={styles.heroDescription}>{profile.description}</p>
           <div className={styles.interestPills} aria-label={profile.interestsLabel}>
@@ -32,11 +33,7 @@ export function ProfileHero() {
             ))}
           </div>
         </div>
-        <div
-          className={styles.portraitWrap}
-          aria-label={profile.portraitLabel}
-          role="img"
-        >
+        <div className={styles.portraitWrap}>
           <div className={styles.portraitOrbit}>
             <Sparkles
               aria-hidden="true"
@@ -48,7 +45,11 @@ export function ProfileHero() {
             />
           </div>
           <div className={styles.portrait}>
-            <span>{profile.portraitInitials}</span>
+            <img
+              className={styles.portraitImage}
+              src={avatar}
+              alt={profile.portraitLabel}
+            />
           </div>
           <MousePointer2 aria-hidden="true" className={styles.portraitCursor} />
         </div>

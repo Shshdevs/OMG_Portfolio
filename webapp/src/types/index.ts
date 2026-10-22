@@ -20,6 +20,7 @@ export type SectionHeadingProps = {
   number: string
   title: string
   id?: string
+  showArrowUpRight?: boolean
 }
 
 export type PanelProps = {
@@ -45,7 +46,6 @@ export type PortfolioContent = {
     interestsLabel: string
     interests: { label: string; featured?: boolean }[]
     portraitLabel: string
-    portraitInitials: string
     about: { heading: string; paragraphs: string[] }
     technologyHeading: string
     activitiesHeading: string

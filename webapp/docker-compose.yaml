@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-webapp
+    restart: unless-stopped
+    ports:
+      - "80:80"

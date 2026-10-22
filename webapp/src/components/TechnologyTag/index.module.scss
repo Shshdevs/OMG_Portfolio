@@ -1,0 +1,23 @@
+.technology-tag {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border-radius: 10px;
+  background: #f8e0e7;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.is-featured {
+  background: #f7dbe5;
+}
+
+@media (max-width: 650px) {
+  .technology-tag {
+    min-height: 36px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+}

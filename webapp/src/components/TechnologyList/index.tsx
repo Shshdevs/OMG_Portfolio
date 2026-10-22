@@ -1,9 +1,10 @@
-import styles from '../styles/index.module.scss'
+import styles from './index.module.scss'
 import { useLayoutEffect, useRef, useState } from 'react'
 import { Ellipsis } from 'lucide-react'
-import { content } from '../data'
-import type { Technology } from '../types'
-import { TechnologyTag } from './TechnologyTag'
+import { content } from '../../data'
+import type { Technology } from '../../types'
+import { TechnologyTag } from '../TechnologyTag'
+import tagStyles from '../TechnologyTag/index.module.scss'
 
 type TechnologyListProps = {
   technologies: Technology[]
@@ -59,7 +60,7 @@ export function TechnologyList({ technologies }: TechnologyListProps) {
         ))}
         {hasOverflow && (
           <span
-            className={`${styles.technologyTag} ${styles.moreTag}`}
+            className={`${tagStyles.technologyTag} ${styles.moreTag}`}
             aria-label={content.labels.moreTechnologies}
           >
             <Ellipsis aria-hidden="true" />

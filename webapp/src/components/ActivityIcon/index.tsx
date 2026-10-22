@@ -1,6 +1,6 @@
 import { Box, BrainCircuit, Heart, Monitor, Smartphone } from 'lucide-react'
-import styles from '../styles/index.module.scss'
-import type { ActivityItem } from '../types'
+import styles from './index.module.scss'
+import type { ActivityItem } from '../../types'
 
 const activityIcons = {
   monitor: Monitor,

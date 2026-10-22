@@ -1,0 +1,20 @@
+.not-found-page {
+  display: grid;
+  min-height: 100vh;
+  align-content: center;
+  justify-items: center;
+  gap: 18px;
+  padding: 24px;
+  background: var(--paper);
+  text-align: center;
+}
+
+.not-found-page h1 {
+  margin: 0;
+}
+
+.back-link {
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: var(--pink-light);
+}

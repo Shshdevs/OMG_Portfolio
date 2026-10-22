@@ -19,8 +19,7 @@
       { "label": "code" },
       { "label": "ideas" }
     ],
-    "portraitLabel": "Иллюстрация автора",
-    "portraitInitials": "ДМ",
+    "portraitLabel": "Портрет автора",
     "about": {
       "heading": "О себе",
       "paragraphs": [

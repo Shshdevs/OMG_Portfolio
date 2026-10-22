@@ -1,6 +1,6 @@
-import styles from '../styles/index.module.scss'
+import styles from './index.module.scss'
 import { NavLink } from 'react-router-dom'
-import { content } from '../data'
+import { content } from '../../data'
 
 export function Navigation() {
   return (

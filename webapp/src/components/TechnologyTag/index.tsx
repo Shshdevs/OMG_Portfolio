@@ -1,5 +1,5 @@
-import styles from '../styles/index.module.scss'
-import type { Technology } from '../types'
+import styles from './index.module.scss'
+import type { Technology } from '../../types'
 
 export function TechnologyTag({ name, featured = false }: Technology) {
   return (

@@ -1,0 +1,100 @@
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr 1fr;
+  gap: 18px;
+}
+
+.detail-column {
+  min-width: 0;
+}
+
+.about-card,
+.technology-card,
+.activity-card {
+  min-height: 285px;
+  padding: 20px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #62585d;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.about-card p {
+  margin-bottom: 16px;
+}
+
+.about-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.code-accent {
+  margin-top: 8px;
+  color: #df6891;
+}
+
+.technology-card {
+  position: relative;
+  display: flex;
+  height: 285px;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.activity-card {
+  padding: 8px 18px;
+}
+
+.activity-row {
+  display: flex;
+  min-height: 52px;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.activity-row:last-child {
+  border-bottom: 0;
+}
+
+.activity-row p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+@media (max-width: 980px) {
+  .details-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-card,
+  .technology-card,
+  .activity-card {
+    min-height: auto;
+  }
+
+  .about-card {
+    padding: 18px;
+  }
+
+  .technology-card {
+    height: 285px;
+    padding: 16px 10px;
+  }
+
+  .activity-card {
+    padding: 6px 14px;
+  }
+}
