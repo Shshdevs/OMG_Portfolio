@@ -1,0 +1,25 @@
+{
+  "headingLead": "Мои",
+  "headingTyped": "проекты...",
+  "subtitle": "Идеи, которые стали кодом",
+  "categoriesLabel": "Категории проектов",
+  "categories": [
+    "Все",
+    "Web",
+    "AI / Data",
+    "Mobile",
+    "Backend"
+  ],
+  "listLabel": "Проекты",
+  "screenshotLabel": "Скриншоты проекта",
+  "contributionLabel": "Что сделано",
+  "technologyLabel": "Технологии",
+  "openProjectLabel": "Открыть проект",
+  "detailBackLabel": "Вернуться к проектам",
+  "recordIds": [
+    "moscow-realtime",
+    "voice-robot",
+    "antifraud-aiegg",
+    "weather-health"
+  ]
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Python",
+    "featured": true
+  },
+  {
+    "name": "FastAPI",
+    "featured": true
+  },
+  {
+    "name": "Kotlin/KMP",
+    "featured": true
+  },
+  {
+    "name": "TypeScript",
+    "featured": true
+  },
+  {
+    "name": "PostgreSQL",
+    "featured": true
+  },
+  {
+    "name": "Docker",
+    "featured": true
+  },
+  {
+    "name": "Linux"
+  },
+  {
+    "name": "Ultralytics"
+  },
+  {
+    "name": "CatBoost"
+  },
+  {
+    "name": "Supabase"
+  },
+  {
+    "name": "Firebase"
+  },
+  {
+    "name": "REST API"
+  },
+  {
+    "name": "Git"
+  },
+  {
+    "name": "Pandas"
+  },
+  {
+    "name": "Selenium"
+  }
+]

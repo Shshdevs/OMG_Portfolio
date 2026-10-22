@@ -1,0 +1,142 @@
+.project-page {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.back-link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--pink-light);
+  color: #4f1830;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.back-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.project-panel {
+  display: grid;
+  gap: 26px;
+  padding: clamp(20px, 4vw, 40px);
+  border-color: var(--border);
+}
+
+.project-header {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+}
+
+.category {
+  padding: 6px 11px;
+  border: 1px solid #c6537f;
+  border-radius: 999px;
+  color: #7c2549;
+  font-size: 12px;
+}
+
+.project-header h1 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 52px);
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.project-header p {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.6;
+}
+
+.project-links,
+.technologies > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: var(--pink-light);
+  color: #4f1830;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  background: #f3c7d7;
+}
+
+.project-links svg {
+  width: 15px;
+  height: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 14px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.technologies,
+.contributions {
+  display: grid;
+  gap: 12px;
+}
+
+.technologies h2,
+.contributions h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.technologies > div {
+  gap: 8px;
+}
+
+.technologies > div > span {
+  min-height: 34px;
+  padding: 0 11px;
+}
+
+.contributions ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.55;
+}
+
+.contributions li::marker {
+  color: var(--pink);
+}
+
+.note {
+  margin: 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}

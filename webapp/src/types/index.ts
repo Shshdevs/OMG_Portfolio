@@ -11,6 +11,30 @@ export type Technology = {
   featured?: boolean
 }
 
+export type ProjectLink = {
+  label: string
+  url: string
+}
+
+export type Project = {
+  slug: string
+  title: string
+  category: string
+  summary: string
+  links: ProjectLink[]
+  technologies: string[]
+  contributions: string[]
+  note?: string
+  screenshots?: { src: string; alt: string }[]
+}
+
+export type ContactItem = {
+  label: string
+  value: string
+  href?: string
+  icon: 'mail' | 'send' | 'github' | 'location' | 'work'
+}
+
 export type ActivityItem = {
   label: string
   icon: 'monitor' | 'brain' | 'phone' | 'cube' | 'heart'
@@ -54,6 +78,35 @@ export type PortfolioContent = {
   }
   technologies: Technology[]
   activities: ActivityItem[]
+  projects: {
+    headingLead: string
+    headingTyped: string
+    subtitle: string
+    categoriesLabel: string
+    categories: string[]
+    listLabel: string
+    screenshotLabel: string
+    contributionLabel: string
+    technologyLabel: string
+    openProjectLabel: string
+    detailBackLabel: string
+    items: Project[]
+  }
+  contacts: {
+    title: string
+    intro: string
+    items: ContactItem[]
+  }
+  aboutPage: {
+    title: string
+    role: string
+    photoPlaceholder: string
+    participationHeading: string
+    participationTitle: string
+    participationSummary: string
+    participationWorkHeading: string
+    participationWork: string
+  }
   navigation: NavigationItem[]
   sections: { title: string; number: string; path: string }[]
   messages: {

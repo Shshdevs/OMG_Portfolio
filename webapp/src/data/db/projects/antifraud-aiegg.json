@@ -1,0 +1,35 @@
+{
+  "slug": "antifraud-aiegg",
+  "title": "Antifraud_AIEgg",
+  "category": "AI / Data",
+  "summary": "Система выявления подозрительных телефонных вызовов для хакатона «Телеком будущего» по кейсу Nexign. Анализирует метаданные CDR и оценивает риск мошенничества без анализа записей разговоров.",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Shshdevs/Antifraud_AIEgg"
+    },
+    {
+      "label": "Демо",
+      "url": "https://fraud-egg.onthewifi.com"
+    }
+  ],
+  "technologies": [
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "CatBoost",
+    "NetworkX",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Docker Compose",
+    "Nginx"
+  ],
+  "contributions": [
+    "Разрабатывала серверную часть на FastAPI и API для работы с данными.",
+    "Работала с обработкой метаданных телефонных вызовов и их хранением в PostgreSQL.",
+    "Использовала CatBoost для оценки риска и NetworkX для анализа графовых связей.",
+    "Участвовала в интеграции backend-логики с пользовательским интерфейсом и развёртывании приложения."
+  ],
+  "note": "Модель машинного обучения разрабатывалась с использованием синтетических данных."
+}

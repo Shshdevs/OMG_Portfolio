@@ -1,0 +1,44 @@
+{
+  "brand": "Дурья Маясья",
+  "brandTitle": "Знакомство",
+  "heroNumber": "01",
+  "sectionNumbers": {
+    "about": "02",
+    "technologies": "03",
+    "activities": "04",
+    "motivation": "05"
+  },
+  "eyebrow": "ПОРТФОЛИО · FULLSTACK DEVELOPER",
+  "greeting": "Привет, я",
+  "name": "Дурья Маясья_",
+  "description": "IT-разработчик | Fullstack | Typescript, Python, FastAPI, Kotlin/KMP, PostgreSQL, Docker, Linux | Разработка и запуск IT-продуктов",
+  "interestsLabel": "Мои интересы",
+  "interests": [
+    {
+      "label": "build products",
+      "featured": true
+    },
+    {
+      "label": "code"
+    },
+    {
+      "label": "ideas"
+    }
+  ],
+  "portraitLabel": "Портрет автора",
+  "about": {
+    "heading": "О себе",
+    "paragraphs": [
+      "Разработчик с практическим опытом создания программных продуктов полного цикла: от проектирования интерфейсов и архитектуры приложения до разработки серверной части, организации хранения данных и развёртывания.",
+      "Работала с Python, Kotlin и TypeScript. Разрабатываю API, интегрирую базы данных и внешние сервисы, настраиваю серверную инфраструктуру.",
+      "В проектах занималась мобильной и backend-разработкой, проектированием баз данных, созданием пользовательских интерфейсов и интеграцией программного обеспечения с аппаратными системами. Имею опыт работы с Kotlin Multiplatform, FastAPI, PostgreSQL, Firebase, Docker и Raspberry Pi."
+    ]
+  },
+  "technologyHeading": "Технологии",
+  "activitiesHeading": "Сейчас",
+  "motivation": {
+    "heading": "Моя мотивация",
+    "quote": "«Технологии — способ превращать фантазии в реальность»"
+  },
+  "pageLabel": "Обо мне и моей работе"
+}

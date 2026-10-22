@@ -1,0 +1,13 @@
+{
+  "messages": {
+    "notFoundNumber": "404",
+    "notFoundTitle": "Страница не найдена",
+    "homeLink": "Вернуться на главную",
+    "sectionPlaceholder": "Этот раздел скоро появится.",
+    "sectionBackLink": "Вернуться к знакомству"
+  },
+  "labels": {
+    "mainNavigation": "Основная навигация",
+    "moreTechnologies": "Есть и другие технологии"
+  }
+}

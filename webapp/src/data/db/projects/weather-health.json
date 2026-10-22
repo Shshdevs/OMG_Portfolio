@@ -1,0 +1,35 @@
+{
+  "slug": "weather-health",
+  "title": "WeatherHealth",
+  "category": "Mobile",
+  "summary": "Учебный проект: мобильное приложение и серверный API для работы с погодными данными и информацией о самочувствии.",
+  "links": [
+    {
+      "label": "Android",
+      "url": "https://github.com/Shshdevs/WeatherHealth"
+    },
+    {
+      "label": "API",
+      "url": "https://github.com/Shshdevs/WeatherHealthApi"
+    }
+  ],
+  "technologies": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Ktor",
+    "Kotlin Coroutines",
+    "Koin",
+    "Python",
+    "FastAPI",
+    "Firebase",
+    "Open-Meteo API",
+    "scikit-learn",
+    "pandas"
+  ],
+  "contributions": [
+    "Разрабатывала Android-приложение на Kotlin и Jetpack Compose.",
+    "Реализовывала взаимодействие мобильного клиента с backend через API.",
+    "Работала над серверной частью на Python с FastAPI и интегрировала внешние источники погодных данных.",
+    "Использовала Firebase для работы с данными и разделяла backend на API, сервисную логику и доменные компоненты."
+  ]
+}

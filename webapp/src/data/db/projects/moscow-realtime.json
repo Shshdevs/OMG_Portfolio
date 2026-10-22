@@ -1,0 +1,38 @@
+{
+  "slug": "moscow-realtime",
+  "title": "MoscowRealtime",
+  "category": "Mobile",
+  "summary": "Кроссплатформенное приложение для интерактивного знакомства с достопримечательностями Москвы. Объединяет карту города, информацию об объектах, туристические маршруты и игровые механики.",
+  "links": [
+    {
+      "label": "Мобильное приложение",
+      "url": "https://github.com/Shshdevs/MoscowRealtime"
+    },
+    {
+      "label": "Backend",
+      "url": "https://github.com/Shshdevs/MoscowRealtime-API"
+    }
+  ],
+  "technologies": [
+    "Kotlin Multiplatform",
+    "Compose Multiplatform",
+    "Python",
+    "Firebase Firestore",
+    "Firebase Authentication",
+    "Ktor",
+    "Yandex MapKit",
+    "Supabase Storage",
+    "Docker",
+    "Docker Compose",
+    "Nginx",
+    "FastAPI"
+  ],
+  "contributions": [
+    "Разработала продукт полного цикла: от проектирования пользовательского опыта и интерфейсов до мобильного приложения, серверной части и развёртывания.",
+    "Спроектировала структуру хранения данных и реализовала работу с Firebase Firestore.",
+    "Разработала backend-компоненты и API на Python, интегрировала мобильный клиент с сервером и внешними сервисами.",
+    "Настроила аутентификацию пользователей с Firebase Authentication и интегрировала Yandex MapKit.",
+    "Реализовала серверную обработку изменений Firestore и индексацию для поиска.",
+    "Настроила контейнеризацию и развёртывание с Docker, Docker Compose и Nginx."
+  ]
+}

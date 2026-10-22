@@ -1,0 +1,38 @@
+{
+  "navigation": [
+    {
+      "label": "Знакомство",
+      "to": "/",
+      "end": true
+    },
+    {
+      "label": "Обо мне",
+      "to": "/about"
+    },
+    {
+      "label": "Мои проекты",
+      "to": "/projects"
+    },
+    {
+      "label": "Контакты",
+      "to": "/contacts"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Обо мне",
+      "number": "02",
+      "path": "/about"
+    },
+    {
+      "title": "Мои проекты",
+      "number": "03",
+      "path": "/projects"
+    },
+    {
+      "title": "Контакты",
+      "number": "04",
+      "path": "/contacts"
+    }
+  ]
+}

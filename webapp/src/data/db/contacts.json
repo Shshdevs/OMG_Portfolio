@@ -1,0 +1,34 @@
+{
+  "title": "Контакты",
+  "intro": "Связаться со мной по вопросам разработки и сотрудничества",
+  "items": [
+    {
+      "label": "Почта",
+      "value": "malinnikova.aleks@yandex.ru",
+      "href": "mailto:malinnikova.aleks@yandex.ru",
+      "icon": "mail"
+    },
+    {
+      "label": "Telegram",
+      "value": "@mnikova_a",
+      "href": "https://t.me/mnikova_a",
+      "icon": "send"
+    },
+    {
+      "label": "GitHub",
+      "value": "github.com/Shshdevs",
+      "href": "https://github.com/Shshdevs",
+      "icon": "github"
+    },
+    {
+      "label": "Местоположение",
+      "value": "Москва, Россия",
+      "icon": "location"
+    },
+    {
+      "label": "Формат работы",
+      "value": "Удалённо / гибрид / офис",
+      "icon": "work"
+    }
+  ]
+}
