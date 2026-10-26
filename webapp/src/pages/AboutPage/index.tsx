@@ -1,4 +1,3 @@
-import { Image } from 'lucide-react'
 import styles from './index.module.scss'
 import { Panel, PortfolioLayout, SectionNumber } from '../../components'
 import { content } from '../../data'
@@ -8,38 +7,45 @@ type AboutPageProps = {
 }
 
 export function AboutPage({ number }: AboutPageProps) {
-  const { aboutPage, profile } = content
+  const { aboutPage } = content
 
   return (
-    <PortfolioLayout section>
+    <PortfolioLayout section gridBackdrop="short">
       <div className={styles.aboutPage}>
         <Panel className={styles.aboutHero}>
           <SectionNumber number={number} />
-          <div className={styles.photoPlaceholder} aria-label={aboutPage.photoPlaceholder}>
-            <Image aria-hidden="true" />
-            <span>{aboutPage.photoPlaceholder}</span>
-          </div>
           <header className={styles.aboutCopy}>
             <span className={styles.role}>{aboutPage.role}</span>
             <h1>{aboutPage.title}</h1>
             <div className={styles.description}>
-              {profile.about.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
+              <p>{aboutPage.description}</p>
             </div>
           </header>
         </Panel>
         <section className={styles.participationSection}>
           <h2>{aboutPage.participationHeading}</h2>
-          <Panel className={styles.participationCard}>
-            <span className={styles.eventLabel}>{aboutPage.participationHeading}</span>
-            <h3>{aboutPage.participationTitle}</h3>
-            <p>{aboutPage.participationSummary}</p>
-            <div className={styles.contribution}>
-              <h4>{aboutPage.participationWorkHeading}</h4>
-              <p>{aboutPage.participationWork}</p>
-            </div>
-          </Panel>
+          {aboutPage.participationCategories.map((category) => (
+            <section className={styles.categoryGroup} key={category.heading}>
+              <h3>{category.heading}</h3>
+              <div className={styles.eventList}>
+                {category.items.map((item) => (
+                  <Panel className={styles.eventCard} key={item.title}>
+                    <div className={styles.eventMeta}>
+                      <span>{item.eyebrow}</span>
+                      <span className={`${styles.status} ${styles[item.statusType]}`}>
+                        {item.status}
+                      </span>
+                    </div>
+                    <h4>{item.title}</h4>
+                    {item.subtitle && <h5>{item.subtitle}</h5>}
+                    <p className={styles.eventDescription}>{item.description}</p>
+                    {item.result && <p className={styles.eventResult}>{item.result}</p>}
+                    {item.stack && <p className={styles.eventStack}>{item.stack}</p>}
+                  </Panel>
+                ))}
+              </div>
+            </section>
+          ))}
         </section>
       </div>
     </PortfolioLayout>

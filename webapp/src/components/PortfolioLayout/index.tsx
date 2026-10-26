@@ -6,9 +6,14 @@ import { Navigation } from '../Navigation'
 type PortfolioLayoutProps = {
   children: ReactNode
   section?: boolean
+  gridBackdrop?: 'default' | 'short'
 }
 
-export function PortfolioLayout({ children, section = false }: PortfolioLayoutProps) {
+export function PortfolioLayout({
+  children,
+  section = false,
+  gridBackdrop = 'default',
+}: PortfolioLayoutProps) {
   const { pathname } = useLocation()
 
   return (
@@ -16,7 +21,10 @@ export function PortfolioLayout({ children, section = false }: PortfolioLayoutPr
       <main
         className={`${styles.portfolioFrame}${section ? ` ${styles.sectionPage}` : ''}`}
       >
-        <div className={styles.gridBackdrop} aria-hidden="true" />
+        <div
+          className={`${styles.gridBackdrop}${gridBackdrop === 'short' ? ` ${styles.shortGridBackdrop}` : ''}`}
+          aria-hidden="true"
+        />
         <Navigation />
         <div className={styles.routeContent} key={pathname}>
           {children}

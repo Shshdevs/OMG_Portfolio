@@ -100,12 +100,21 @@ export type PortfolioContent = {
   aboutPage: {
     title: string
     role: string
-    photoPlaceholder: string
+    description: string
     participationHeading: string
-    participationTitle: string
-    participationSummary: string
-    participationWorkHeading: string
-    participationWork: string
+    participationCategories: {
+      heading: string
+      items: {
+        eyebrow: string
+        status: string
+        statusType: 'neutral' | 'success' | 'progress'
+        title: string
+        subtitle?: string
+        description: string
+        result?: string
+        stack?: string
+      }[]
+    }[]
   }
   navigation: NavigationItem[]
   sections: { title: string; number: string; path: string }[]

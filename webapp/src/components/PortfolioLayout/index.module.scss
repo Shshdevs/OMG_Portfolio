@@ -28,6 +28,11 @@
   background-size: 42px 42px;
 }
 
+.short-grid-backdrop {
+  height: 435px;
+  min-height: 0;
+}
+
 .section-page {
   min-height: min(760px, calc(100vh - 84px));
 }

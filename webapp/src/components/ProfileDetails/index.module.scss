@@ -5,12 +5,15 @@
 }
 
 .detail-column {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
 }
 
 .about-card,
 .technology-card,
 .activity-card {
+  flex: 1;
   min-height: 285px;
   padding: 20px;
 }
@@ -40,7 +43,7 @@
 .technology-card {
   position: relative;
   display: flex;
-  height: 285px;
+  height: auto;
   align-items: stretch;
   overflow: hidden;
 }

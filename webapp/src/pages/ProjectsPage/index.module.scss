@@ -85,7 +85,18 @@
   padding: 5px 13px;
   border: 1px solid #bcaeb3;
   border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
   font-size: 12px;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.category:hover {
+  border-color: #c6537f;
 }
 
 .category-dot {
