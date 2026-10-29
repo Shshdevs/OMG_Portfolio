@@ -1,4 +1,5 @@
 import { MousePointer2, Sparkles } from 'lucide-react'
+import type { CSSProperties } from 'react'
 import styles from './index.module.scss'
 import { content } from '../../data'
 import { Panel } from '../Panel'
@@ -17,8 +18,20 @@ export function ProfileHero() {
         </div>
         <span className={styles.heroNumber}>[ {profile.heroNumber} ]</span>
         <div className={styles.introCopy}>
-          <h1 id="hero-title">
-            {profile.greeting} <span className={styles.typedName}>{profile.name}</span>
+          <h1 id="hero-title" aria-label={`${profile.greeting} ${profile.name}`}>
+            <span>{profile.greeting}</span>
+            <span className={styles.typedName} aria-hidden="true">
+              {[...profile.name].map((character, index) => (
+                <span
+                  aria-hidden="true"
+                  className={styles.typedCharacter}
+                  key={`${character}-${index}`}
+                  style={{ '--character-delay': `${100 + index * 40}ms` } as CSSProperties}
+                >
+                  {character}
+                </span>
+              ))}
+            </span>
           </h1>
           <p className={styles.heroDescription}>{profile.description}</p>
           <div className={styles.interestPills} aria-label={profile.interestsLabel}>
