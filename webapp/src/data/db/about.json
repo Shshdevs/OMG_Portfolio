@@ -26,15 +26,6 @@
           "result": "Результат: 3-е место."
         },
         {
-          "eyebrow": "Android-разработка и ML",
-          "status": "В процессе",
-          "statusType": "progress",
-          "title": "Nuclear IT-Hack",
-          "subtitle": "Кейс Hex.Team",
-          "description": "Комплексная разработка Android-приложения с применением искусственного интеллекта и технологий обработки речи. Выполняла разработку проекта, включая пользовательский интерфейс, локальное хранение данных и интеграцию ML-модели.",
-          "stack": "Стек: Kotlin, Jetpack Compose, ONNX Runtime, Room и другие технологии Android-разработки."
-        },
-        {
           "eyebrow": "Молодёжный чемпионат · 2026",
           "status": "4-е место",
           "statusType": "success",
